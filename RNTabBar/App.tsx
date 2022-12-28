@@ -1,10 +1,14 @@
-import React, {type PropsWithChildren} from 'react';
-import {StatusBar, StyleSheet, Text, useColorScheme, View} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {StatusBar, StyleSheet} from 'react-native';
+import Primary from './src/navigation/Primary';
 
 const App = () => {
   return (
     <>
-      <StatusBar barStyle={'light-content'} />
+      <StatusBar barStyle={'dark-content'} />
+      <NavigationContainer>
+        <Primary />
+      </NavigationContainer>
     </>
   );
 };
