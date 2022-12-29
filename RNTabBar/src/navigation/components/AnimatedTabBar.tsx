@@ -26,7 +26,7 @@ export default function AnimatedTabBar({
 
   const [layout, dispatch] = useReducer(reducer, []);
 
-  console.log(layout);
+  // console.log(layout);
 
   const handleLayout = (event: LayoutChangeEvent, index: number) => {
     dispatch({x: event.nativeEvent.layout.x, index});
@@ -38,7 +38,7 @@ export default function AnimatedTabBar({
     const xOffsetInner =
       [...layout].find(({index}) => index === activeIndex)!.x - 25;
 
-    console.log(xOffsetInner);
+    // console.log(xOffsetInner);
 
     return xOffsetInner;
   }, [activeIndex, layout]);
@@ -56,7 +56,7 @@ export default function AnimatedTabBar({
         height={60}
         viewBox="0 0 110 60"
         style={[styles.activeBackground, animatedStyles]}>
-        <Background color="red" />
+        <Background color="#82AAE3" />
       </AnimatedSvg>
 
       <View style={styles.tabBarContainer}>

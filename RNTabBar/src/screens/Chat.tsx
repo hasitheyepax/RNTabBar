@@ -1,13 +1,14 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 
-export default function Authors() {
+export default function Chat() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Authors</Text>
+      <Text style={styles.text}>Chat</Text>
     </View>
   );
 }
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,

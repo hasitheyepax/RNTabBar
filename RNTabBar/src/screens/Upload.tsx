@@ -1,14 +1,13 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 
-export default function Books() {
+export default function Upload() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Books</Text>
+      <Text style={styles.text}>Upload</Text>
     </View>
   );
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
